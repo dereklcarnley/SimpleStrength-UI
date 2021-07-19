@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My Style Guide</title>
+
+    <!-- Site theme -->
+    <style>
+        body {
+            font-family:Verdana, sans-serif;
+            color: black;
+        }
+
+        .page-header {
+            padding-top: 10px;
+            line-height: 5px;
+            margin: 2px 0;
+            border-bottom:solid dodgerblue 1px;
+        }
+
+        h1 {
+            font-family:Georgia;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-family:Georgia;
+            font-size: 22px;
+        }
+
+        h3 {
+            font-family:Georgia;
+            font-size: 18px;
+        }
+
+        button {
+            border-radius: 2px;
+            padding: 10px;
+            color: white;
+        }
+
+        .button1 {
+            border-style:solid;
+            border-width: 1px;
+            border-color: orange;
+            color:orange;
+            background-color:white;
+            font-weight: bold;
+        }
+
+        .button1:hover {
+            background-color: rgb(255, 202, 103);
+        }
+
+        .button2 {
+            border-style:solid; 
+            border-width: 1px;
+            border-color:dodgerblue;
+            color:dodgerblue;
+            background-color: white;
+            font-weight: bold;
+        }
+
+        .button2:hover {
+            background-color:lightskyblue;
+        }
+
+        .button3 {
+            border-style:solid;
+            border-width: 1px;
+            border-color: red;
+            color: red;
+            background-color:white;
+            font-weight: bold;
+        }
+
+        .button3:hover {
+            background-color: rgb(243, 132, 132);
+        }
+
+        .inputLabel {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input.inputField {
+            padding: 5px;
+            border: 1px solid dodgerblue;
+            border-radius: 2px;
+        }
+
+        .radioBox {
+            padding:10px;
+            border-top: solid dodgerblue 1px;
+            max-width: 33%;
+        }
+
+        .radioLabel {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .numberLabel {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        div.box {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            margin: 0 10px 0 10px;
+        }
+
+        #primary1 {
+            background-color: orange;
+        }
+
+        #primary2 {
+            background-color:skyblue;
+        }
+
+        #primary3 {
+            background-color:dodgerblue;
+        }
+
+        .warning {
+            background-color: yellow;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+            padding: 10px;
+            border:solid black 3px;
+            border-radius: 2px;
+        }
+
+        .danger {
+            background-color: white;
+            font-weight: bold;
+            text-align: center;
+            color: red;
+            padding: 10px;
+            border: solid red 3px;
+            border-radius: 2px;
+        }
+
+        .success {
+            background-color: white;
+            font-weight: bold;
+            text-align: center;
+            color: green;
+            padding: 10px;
+            border:solid green 3px;
+            border-radius: 2px;
+        }
+
+        svg.svg-inline--fa {
+            color: white;
+        }
+
+        .spacer {
+            margin-top: 25px;
+            padding-bottom:10px;
+        }
+
+        .spacer > a {
+            display: block;
+            border-style:solid;
+            border-width: 1px;
+            border-color: dodgerblue;
+            background-color:white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 2px;
+            color: dodgerblue;
+            max-width:fit-content;
+        }
+
+        .spacer > a:hover {
+            background-color:lightskyblue;
+        }
+
+        #footer {
+            border-top: 1px solid #dddddd;
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a name="Top"></a>
+    <div class="container">
+        <!-- About -->
+        <div>
+            <div class="page-header">
+                <h1>
+                    <a name="about"></a>My Styles</h1>
+            </div>
+            <p>This page contains specific style guide information for my front end interface.</p>
+        </div>
+        <!-- End About -->
+
+        <!-- Fonts -->
+        <div>
+            <div class="page-header">
+                <h1>
+                    <a name="fonts"></a>Font</h1>
+            </div>
+            <p>My application utilizes primarily Verdana for body text. According to my research, 
+                Verdana is similar to some of the most popular fonts for web content (Arial, Helvetica), and will display well on mobile devices.
+                Georgia, a serif font, will be used for headings.
+            </p>
+        </div>
+        <div class="spacer">
+            <a href="#Top">Back to Top</a>
+        </div>
+        <!-- End Fonts -->
+
+        <!-- Color Theme -->
+        <div>
+            <div class="page-header">
+                <h1>
+                    <a name="colorTheme"></a>Color Theme</h1>
+            </div>
+            <p>My application incorporates the below color scheme in its interface.</p>   
+            <p>Blue will be the main color, because it can symbolize confidence and intelligence.</p>
+            <p>Orange will be used as a highlight color, to add a sense of welcoming and positivity. 
+                Blue and Orange is a tried and true color combination, which will be easier to work with than some other combinations associated with sports like weightlifting (red, for example).</p>
+            <div class="box" id="primary1"></div>
+            <div class="box" id="primary2"></div>
+            <div class="box" id="primary3"></div>
+        </div>
+        <div class="spacer">
+            <a href="#Top">Back to Top</a>
+        </div>
+        <!-- End Color Theme -->
+
+        <!-- Headings -->
+        <div>
+            <div class="page-header">
+                <h1>
+                    <a name="headings"></a>Headings</h1>
+            </div>
+            <p>The below font sizes and styles are used in the application for various content headings.</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+        </div>
+        <div class="spacer">
+            <a href="#Top">Back to Top</a>
+        </div>
+        <!-- End Headings -->
+
+        <!-- Buttons -->
+        <div>
+            <div class="page-header">
+                <h1>
+                    <a name="buttons"></a>Buttons</h1>
+            </div>
+            <p>The application will feature buttons that contain the below color and shape:</p>
+            <button class="button2">Completed all sets!</button>
+            <button class="button1">Almost there.</button>
+            <button class="button3">Too heavy...</button>
+        </div>
+        <div class="spacer">
+            <a href="#Top">Back to Top</a>
+        </div>
+        <!-- End Buttons -->
+
+        <!-- Form Elements -->
+        <div>
+            <div class="page-header">
+                <h1>
+                    <a name="formElements"></a>Form Elements</h1>
+            </div>
+            <p>For the varous forms that the application will contain, it will contain input fields and labels with the below styling:</p>
+            <form>
+                <label for="name" class="inputLabel">Name: </label>
+                <input type="input" id="name" class="inputField" value="">
+            </form>
+            <br>
+            <form class="radioBox">
+                <input type="radio" class="inputRadio"  id="radio1" name="radio" value="radio1" checked="checked">
+                <label for="radio1" class="radioLabel">Radio 1</label><br>
+                <input type="radio" class="inputRadio" id="radio2" name="radio" value="radio2">
+                <label for="radio2" class="radioLabel">Radio 2</label><br>
+            </form>
+            <form class="radioBox">  
+                <label for="number" class="numberLabel">Bodyweight:</label><br>
+                <input type="number"  id="number" name="number" min="1"> 
+            </form>
+        </div>
+        <div class="spacer">
+            <a href="#Top">Back to Top</a>
+        </div>
+        <!-- End Form Elements -->
+
+        <!-- User Messages -->
+        <div>
+            <div class="page-header">
+                <h1>
+                    <a name="messages"></a>Messages</h1>
+            </div>
+            <p>For various completed tasks, application notifications will be presented to the user.  The following contextual messages will be used.</p>
+            <p class="warning">Error syncing with database. Please try again.</p>
+            <p class="danger">Input is required.</p>
+            <p class="success">Success! Your profile has been updated.</p>
+        </div>
+        <div class="spacer">
+            <a href="#Top">Back to Top</a>
+        </div>
+        <!-- End User Messages -->
+    </div>
+</body>
+
+</html>
