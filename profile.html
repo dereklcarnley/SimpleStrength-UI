@@ -35,20 +35,83 @@
           </ul>
         </div>
     </nav>
-    
+
     <div class="container">
+        <h2>Your Profile</h2>
+        <hr class="solid">
         <div class="row">
             <div class="col">
-                <h2>Profile</h2>
-                <hr class="solid">
+                <p>Sex: </p>
+                <p>Age: </p>
+                <p>Bodyweight: </p>
+                <p>Fitness Level: </p>
             </div>
         </div>
     </div>
 
     <div class="container">
+        <h2>Update Profile</h2>
+        <hr class="solid">
+
         <div class="row">
             <div class="col">
-                Display user profile information and forms here!
+                <form>
+                    <div class="form-group">
+                        <label for="sex">Sex: </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sex" id="male" value="male" checked="checked">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sex" id="female" value="male">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age: </label>
+                        <select class="form-control" id="age">
+                            <option>14-17</option>
+                            <option>18-23</option>
+                            <option>24-39</option>
+                            <option>40-49</option>
+                            <option>50-59</option>
+                            <option>60-69</option>
+                            <option>70-79</option>
+                            <option>80-89</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bodyweight">Bodyweight: </label>
+                        <input type="number" class="form-control" id="bodyweight" min="100" max="310">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fitnesslevel">Fitness Level: </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="fitnesslevel" id="beginner" value="beginner" checked="checked">
+                            <label class="form-check-label" for="beginner">Beginner</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="fitnesslevel" id="novice" value="novice">
+                            <label class="form-check-label" for="novice">Novice</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="fitnesslevel" id="intermediate" value="intermediate">
+                            <label class="form-check-label" for="intermediate">Intermediate</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="fitnesslevel" id="advanced" value="advanced">
+                            <label class="form-check-label" for="advanced">Advanced</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="fitnesslevel" id="elite" value="elite">
+                            <label class="form-check-label" for="elite">Elite</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>    
             </div>
         </div>
     </div>
