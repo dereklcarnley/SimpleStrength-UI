@@ -1,0 +1,16 @@
+nav {
+  background-color: #59a8f7;
+}
+img {
+  display: block;
+  width: 128px;
+  height: auto;
+  padding: 10px;
+}
+.container {
+  padding: 20px;
+}
+#icon-credit {
+  font-size: small;
+  color: gray;
+}
