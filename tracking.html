@@ -42,14 +42,43 @@
             <div class="col">
                 <h2>Workout Tracking</h2>
                 <hr class="solid">
+                <p>To use this workout tracker:</p>
+                <ol>
+                    <li>Select a workout goal.</li>
+                    <li>At the gym, warm up before you start your working sets. <a href="https://www.triathlete.com/training/ask-a-trainer-how-should-i-warm-up-for-strength-training/" target="blank">5-minute warmup</a></li>
+                    <li>Attempt the suggested workout.</li>
+                    <li>Select the response which most closely matches your performance.</li>
+                </ol>
+                <p>Simple Strength will automatically update your working weight up or down, depending on your performance!</p>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container border">
         <div class="row">
-            <div class="col">
-                Display user workouts here!
+            <div class="col text-center">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="goal" id="strength" autocomplete="off" checked> Strength
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="goal" id="hypertrophy" autocomplete="off"> Hypertrophy
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="goal" id="general" autocomplete="off"> General Fitness
+                    </label>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-right">
+                <p>Bench Press: ### lbs: # sets of #-# reps</p>
+            </div>
+            <div class="col text-left">
+                <button class="btn btn-success">All Sets & Reps Completed!</button>
+                <button class="btn btn-warning">Almost There</button>
+                <button class="btn btn-danger">Too Heavy</button>
             </div>
         </div>
     </div>
