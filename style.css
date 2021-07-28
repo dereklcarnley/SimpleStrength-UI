@@ -1,3 +1,15 @@
+.btn-primary {
+  background-color: dodgerblue;
+}
+.btn-primary :focus {
+  background-color: #1262b3;
+}
+.btn-primary :active {
+  background-color: #1262b3;
+}
+.btn-primary :hover {
+  background-color: #59a8f7;
+}
 .container {
   padding: 20px;
 }
