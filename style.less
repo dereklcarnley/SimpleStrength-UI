@@ -3,10 +3,6 @@
 @primary-color-shade:   rgb(18, 98, 179);
 @primary-color-light:   rgb(89, 168, 247);
 
-@secondary-color:       orange;
-@secondary-color-shade: rgb(207, 135, 0);
-@secondary-color-light: rgb(255, 187, 61);
-
 @gray-dark:             rgb(75, 75, 75);
 @gray-medium:           gray;
 @gray-light:            rgb(200, 200, 200);
@@ -22,13 +18,14 @@
 // ---- Rulesets ---- //
 .btn-primary {
     background-color: @primary-color;
-    :focus {
+    border-color: @primary-color;
+    &:focus {
         background-color: @primary-color-shade;
     };
-    :active {
+    &:active {
         background-color: @primary-color-shade;
     };
-    :hover {
+    &:hover {
         background-color: @primary-color-light
     };
 };
