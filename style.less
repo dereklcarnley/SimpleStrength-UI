@@ -9,31 +9,51 @@
 
 @gray-dark:             rgb(75, 75, 75);
 @gray-medium:           gray;
-@gray-light:            rgb(175, 175, 175);
+@gray-light:            rgb(200, 200, 200);
 
 
 // ---- Other Variables ---- //
+@icon-width:              128px;
+
 @padding-standard:        20px;
 @padding-small:           10px;
 
 
 // ---- Rulesets ---- //
-nav {
-    background-color: @primary-color-light;
-};
-
-img {
-    display: block;
-    width: 128px;
-    height: auto;
-    padding:@padding-small;
-};
-
 .container {
     padding:@padding-standard;
+};
+
+.exerciseLabel {
+    font-weight:bold;
+    font-size:x-large;
+}
+
+.exerciseDescription {
+    font-size:x-large;
+};
+
+.icon {
+    display: block;
+    width: @icon-width;
+    height: auto;
+    padding:@padding-small;
 };
 
 #icon-credit {
     font-size: small;
     color: @gray-medium;
+};
+
+.navbar-brand {
+    font-weight: bold;
+};
+
+.profileLabel {
+    font-weight: bold;
+};
+
+.title {
+    color:white; 
+    font-weight:bold;
 };

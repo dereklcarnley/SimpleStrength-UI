@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">SIMPLE STRENGTH</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,15 +50,14 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container border">
         <h2>Update Profile</h2>
         <hr class="solid">
-
         <div class="row">
             <div class="col">
                 <form>
                     <div class="form-group">
-                        <label for="sex">Sex: </label>
+                        <label class="profileLabel" for="sex">Sex: </label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="sex" id="male" value="male" checked="checked">
                             <label class="form-check-label" for="male">Male</label>
@@ -70,7 +69,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="age">Age: </label>
+                        <label class="profileLabel" for="age">Age: </label>
                         <select class="form-control" id="age">
                             <option>14-17</option>
                             <option>18-23</option>
@@ -84,12 +83,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="bodyweight">Bodyweight: </label>
+                        <label class="profileLabel" for="bodyweight">Bodyweight: </label>
                         <input type="number" class="form-control" id="bodyweight" min="100" max="310">
                     </div>
 
                     <div class="form-group">
-                        <label for="fitnesslevel">Fitness Level: </label>
+                        <label class="profileLabel" for="fitnesslevel">Fitness Level: </label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="fitnesslevel" id="beginner" value="beginner" checked="checked">
                             <label class="form-check-label" for="beginner">Beginner</label>
@@ -111,7 +110,7 @@
                             <label class="form-check-label" for="elite">Elite</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Update</button>
                 </form>    
             </div>
         </div>

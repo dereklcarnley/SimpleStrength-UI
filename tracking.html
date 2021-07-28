@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">SIMPLE STRENGTH</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,10 +38,10 @@
     </nav>
     
     <div class="container">
+        <h2>Workout Tracking</h2>
+        <hr class="solid">
         <div class="row">
             <div class="col">
-                <h2>Workout Tracking</h2>
-                <hr class="solid">
                 <p>To use this workout tracker:</p>
                 <ol>
                     <li>Select a workout goal.</li>
@@ -58,27 +58,134 @@
         <div class="row">
             <div class="col text-center">
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-primary active">
+                    <label class="btn btn-outline-primary active">
                       <input type="radio" name="goal" id="strength" autocomplete="off" checked> Strength
                     </label>
-                    <label class="btn btn-primary">
+                    <label class="btn btn-outline-primary">
                       <input type="radio" name="goal" id="hypertrophy" autocomplete="off"> Hypertrophy
                     </label>
-                    <label class="btn btn-primary">
+                    <label class="btn btn-outline-primary">
                       <input type="radio" name="goal" id="general" autocomplete="off"> General Fitness
                     </label>
-                  </div>
+                </div>
             </div>
         </div>
 
+        <br>
+
         <div class="row">
             <div class="col text-right">
-                <p>Bench Press: ### lbs: # sets of #-# reps</p>
+                <span class="exerciseLabel">Bench Press: </span>
+                <span class="exerciseDescription" id="benchDescription">### lbs: # sets of #-# reps</span>
             </div>
             <div class="col text-left">
-                <button class="btn btn-success">All Sets & Reps Completed!</button>
-                <button class="btn btn-warning">Almost There</button>
-                <button class="btn btn-danger">Too Heavy</button>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-success">
+                    <input type="radio" name="benchResponse" id="benchComplete" autocomplete="off"> All Sets Completed!
+                    </label>
+                    <label class="btn btn-outline-warning">
+                    <input type="radio" name="benchResponse" id="benchAlmost" autocomplete="off"> Almost
+                    </label>
+                    <label class="btn btn-outline-danger">
+                    <input type="radio" name="benchResponse" id="benchTooHeavy" autocomplete="off"> Too Heavy...
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <hr class="solid">
+
+        <div class="row">
+            <div class="col text-right">
+                <span class="exerciseLabel">Deadlift: </span>
+                <span class="exerciseDescription" id="deadliftDescription">### lbs: # sets of #-# reps</span>
+            </div>
+            <div class="col text-left">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-success">
+                    <input type="radio" name="deadliftResponse" id="deadliftComplete" autocomplete="off"> All Sets Completed!
+                    </label>
+                    <label class="btn btn-outline-warning">
+                    <input type="radio" name="deadliftResponse" id="deadliftAlmost" autocomplete="off"> Almost
+                    </label>
+                    <label class="btn btn-outline-danger">
+                    <input type="radio" name="deadliftResponse" id="deadliftTooHeavy" autocomplete="off"> Too Heavy...
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <hr class="solid">
+
+        <div class="row">
+            <div class="col text-right">
+                <span class="exerciseLabel">Overhead Press: </span>
+                <span class="exerciseDescription" id="ohpDescription">### lbs: # sets of #-# reps</span>
+            </div>
+            <div class="col text-left">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-success">
+                    <input type="radio" name="ohpResponse" id="ohpComplete" autocomplete="off"> All Sets Completed!
+                    </label>
+                    <label class="btn btn-outline-warning">
+                    <input type="radio" name="ohpResponse" id="ohpAlmost" autocomplete="off"> Almost
+                    </label>
+                    <label class="btn btn-outline-danger">
+                    <input type="radio" name="ohpResponse" id="ohpTooHeavy" autocomplete="off"> Too Heavy...
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <hr class="solid">
+
+        <div class="row">
+            <div class="col text-right">
+                <span class="exerciseLabel">Squat: </span>
+                <span class="exerciseDescription" id="squatDescription">### lbs: # sets of #-# reps</span>
+            </div>
+            <div class="col text-left">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-success">
+                    <input type="radio" name="squatResponse" id="squatComplete" autocomplete="off"> All Sets Completed!
+                    </label>
+                    <label class="btn btn-outline-warning">
+                    <input type="radio" name="squatResponse" id="squatAlmost" autocomplete="off"> Almost
+                    </label>
+                    <label class="btn btn-outline-danger">
+                    <input type="radio" name="squatResponse" id="squatTooHeavy" autocomplete="off"> Too Heavy...
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <hr class="solid">
+
+        <div class="row">
+            <div class="col text-right">
+                <span class="exerciseLabel">Bent-Over Row: </span>
+                <span class="exerciseDescription" id="rowDescription">### lbs: # sets of #-# reps</span>
+            </div>
+            <div class="col text-left">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-success">
+                    <input type="radio" name="rowResponse" id="rowComplete" autocomplete="off"> All Sets Completed!
+                    </label>
+                    <label class="btn btn-outline-warning">
+                    <input type="radio" name="rowResponse" id="rowAlmost" autocomplete="off"> Almost
+                    </label>
+                    <label class="btn btn-outline-danger">
+                    <input type="radio" name="rowResponse" id="rowTooHeavy" autocomplete="off"> Too Heavy...
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <br>
+         
+        <div class="row text-center">
+            <div class="col">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Finish Workout</button>
             </div>
         </div>
     </div>

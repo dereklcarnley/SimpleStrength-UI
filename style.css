@@ -1,16 +1,30 @@
-nav {
-  background-color: #59a8f7;
+.container {
+  padding: 20px;
 }
-img {
+.exerciseLabel {
+  font-weight: bold;
+  font-size: x-large;
+}
+.exerciseDescription {
+  font-size: x-large;
+}
+.icon {
   display: block;
   width: 128px;
   height: auto;
   padding: 10px;
 }
-.container {
-  padding: 20px;
-}
 #icon-credit {
   font-size: small;
   color: gray;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+.profileLabel {
+  font-weight: bold;
+}
+.title {
+  color: white;
+  font-weight: bold;
 }
